@@ -15,7 +15,7 @@ public class Gilberto extends Actor
     public void act()
     {
         if(Greenfoot.mouseClicked(this)){
-            Greenfoot.setWorld(new Antigo());
+            Greenfoot.setWorld(new Mapa2());
         }// Add your action code here.
     }
 }

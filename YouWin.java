@@ -16,6 +16,6 @@ public class YouWin extends World
     public YouWin()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(300, 168, 1); 
+        super(1200, 675, 1); 
     }
 }
