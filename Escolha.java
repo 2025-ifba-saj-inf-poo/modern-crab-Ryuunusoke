@@ -1,20 +1,21 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class CrabWorld here.
+ * Write a description of class Escolha here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class CrabWorld extends World
+public class Escolha extends World
 {
 
     /**
-     * Constructor for objects of class CrabWorld.
+     * Constructor for objects of class Escolha.
      * 
      */
-    public CrabWorld()
+    public Escolha()
     {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 675, 1); 
         prepare();
     }
@@ -24,7 +25,9 @@ public class CrabWorld extends World
      */
     private void prepare()
     {
-        Crab crab = new Crab();
-        addObject(crab,609,428);
+        Gilberto gilberto = new Gilberto();
+        addObject(gilberto,850,366);
+        Pedro pedro = new Pedro();
+        addObject(pedro,235,370);
     }
 }
