@@ -7,6 +7,7 @@ public class Decapoda extends Actor
     private String keyRight = "right";
     private int showTextX = 100;
     private int showTextY = 10;
+    public String nome;
     
     public Decapoda(String keyLeft, String keyRight, int showTextX , int showTextY ){
         this.keyLeft = keyLeft;
@@ -33,18 +34,15 @@ public class Decapoda extends Actor
       if (isTouching(Worm.class)) {
       removeTouching(Worm.class);
       this.quantidade+=1;
-      getWorld().showText("Jogador R$ " + String.valueOf(quantidade), showTextX, showTextY);
+      getWorld().showText(this.nome + " R$ " + String.valueOf(quantidade), showTextX, showTextY);
       Greenfoot.playSound("dinheiro-caindo-na-conta.mp3");
   }
   if(isTouching(DinheiroMenor.class)){
       removeTouching(DinheiroMenor.class);
       this.quantidade+=0.5;
-      getWorld().showText("Jogador R$ " + String.valueOf(quantidade), showTextX, showTextY);
+      getWorld().showText(this.nome + " R$ " + String.valueOf(quantidade), showTextX, showTextY);
       Greenfoot.playSound("dinheiro-caindo-na-conta.mp3");
     }
     
-  if(this.quantidade == 55.5){
-    Greenfoot.setWorld(new YouWin());
-    }
 }
 }

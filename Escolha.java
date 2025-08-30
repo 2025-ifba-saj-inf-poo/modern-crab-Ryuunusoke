@@ -19,6 +19,7 @@ public class Escolha extends World
         super(1200, 675, 1); 
         prepare();
     }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -29,5 +30,8 @@ public class Escolha extends World
         addObject(gilberto,850,366);
         Pedro pedro = new Pedro();
         addObject(pedro,235,370);
+        pedro.setLocation(239,428);
+        gilberto.setLocation(891,386);
+        gilberto.setLocation(916,414);
     }
 }
